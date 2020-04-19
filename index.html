@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>The Future Of Post It</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+	<link rel="icon" href="media/favicon-96x96.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="module" src="/js/isConnected.js" charset="utf-8"></script>
+    <script type="module" src="/js/menu.js" charset="utf-8"></script>
+    <script type="module" src="js/form/formLogin.js" charset="utf-8"></script>
+    <script type="module" src="js/form/formRegister.js" charset="utf-8"></script>
+</head>
+<body>
+	<header>
+		<img src = "media/logo.png" alt="LogoMenu"/>
+		<img id="iconMenu" src = "media/iconMenu.png" alt="iconMenu"/>
+	</header>
+	<div id ="main" style="display:none">
+        <p id="mainText">Bienvenue sur un site innovant de rappel sur boîte mail</p>
+		<p id="mainExplainText">Ce site vous permettra intuitivement d'ajouter des rappels à une liste propre à votre compte avec une date précise et recevoir un mail au moment choisi.
+		Ce site est un projet de 2ème année du module M4103C programmation web en IUT informatique.</p>
+    </div>
+
+	<div id="loginMenu" style="display:none">
+	<form id="form-login" action="json/login.php" method="post" class="logged">
+		<div class="form-group logged">
+			<label class="logged" for="username">Adresse email :</label>
+			<input type="text" class="form-control logged" id="username" name="email">
+		</div>
+		<div class="form-group logged">
+			<label for="pwd" class="logged">Mot de passe :</label>
+			<input type="password" class="form-control logged" id="pwd" name="password">
+		</div>
+		<button type="submit" class="logged btn-default">Se connecter</button>
+		<p class="errorMessage" id="errorLogin" style="display:none">test</p>
+	</form>
+		<p class="logged asking">Pas encore inscrit ?</p>
+		<button id="registerButton" class="logged btn-default">Inscrivez-vous</button>
+	</div>
+
+	<div id="registerMenu" style="display:none">
+		<form id="form-register" action="json/register.php" method="post">
+			<div class="form-group">
+				<label for="emailRegister">Adresse email :</label>
+				<input type="text" class="form-control" id="emailRegister" name="emailRegister">
+				<p class="errorMessage" id="errorEmailRegister" style="display:none"></p>
+			</div>
+			<div class="form-group">
+				<label for="passwordRegister">Mot de passe :</label>
+				<input type="password" class="form-control" id="passwordRegister" name="passwordRegister">
+                <p class="errorMessage" id="errorPasswordRegister" style="display:none"></p>
+			</div>
+			<div class="form-group">
+				<label for="confirmPasswordRegister">Confirmation du mot de passe :</label>
+				<input type="password" class="form-control" id="confirmPasswordRegister" name="confirmPasswordRegister">
+				<p class="errorMessage" id="errorConfirmPasswordRegister" style="display:none"></p>
+			</div>
+			<button id="btn-submit-register" type="submit" class="btn-default">S'inscrire</button>
+            <p class="thanks" id="thanksRegister" style="display:none"></p>
+		</form>
+		<div id="errorMessageRegister" style="display:none;"></div>
+		<p class="asking">Deja Inscrit ?</p>
+		<button id="loginButton">Connectez-vous</button>
+	</div>
+</body>
+
+</html>
