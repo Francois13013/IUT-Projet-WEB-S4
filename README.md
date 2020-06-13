@@ -7,9 +7,8 @@ Le projet était de concevoir un site professionnel avec un système d'inscripti
 2019-2020
 
 ## Screenshots
-<a href="https://prnt.sc/syzozf" alt="Image from Lightshot" width="600"/></a>
-<a href="https://gyazo.com/930e28b6b599f6c3708fcb27bae30d2d" alt="GIF from Gyazo" width="400"/></a>
-<a href="https://gyazo.com/492ec4387feae773bb50775752872d5f" alt="GIF from Gyazo" width="600"/></a>
+[![Image from Gyazo](https://i.gyazo.com/3720dfebbf6721f5b2c26a104775f774.jpg)](https://gyazo.com/3720dfebbf6721f5b2c26a104775f774)
+[![Image from Gyazo](https://i.gyazo.com/492ec4387feae773bb50775752872d5f.gif)](https://gyazo.com/492ec4387feae773bb50775752872d5f)
 
 ## Langage
 - JAVASCRIPT
